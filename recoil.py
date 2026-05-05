@@ -427,7 +427,7 @@ def exit_listener():
     while running:
         if win32api.GetAsyncKeyState(Config.EXIT_KEY) & 0x8000:
             running = False
-            print("\n[System] Exit")
+            print("\nExited")
             break
         time.sleep(0.01)
 
